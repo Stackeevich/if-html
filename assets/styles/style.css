@@ -5,6 +5,9 @@
 
 .container {
     background-image: url("/assets/img/top-section-back.svg");
+    /*
+    on my computer i see background without  ..  
+    */
     background-size: 100%;
     min-height: 100vh;
 } 
@@ -37,11 +40,11 @@ a {
     color: #FFFFFF;
 }
 
-/* a:active {
+/* a:hover {
     border-bottom: 4px solid #F5BD41;
-} 
---> as i think active link with line 
-*/ 
+}  */
+/* --> as i think active link with line  */
+ 
 
 .stays {
     margin-right: 24px;
@@ -85,15 +88,26 @@ a {
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
 }
 
-.datetime {
+.date {
+   
     width: 259px;
     height: 64px;
+    left: 571px;
+    top: 556px;
     border: 3px solid #F5BD41;
+    box-sizing: border-box;
     border-radius: 8px;
-    margin-left: -5px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+
 }
 
 .howPeople {
@@ -101,7 +115,6 @@ a {
     height: 64px;
     border-radius: 8px;
     border: #FFFFFF;
-    margin-left: -3px;
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;
@@ -112,12 +125,15 @@ a {
 }
 
 .searchBottom { 
+   
     width: 192px;
     height: 64px;
+    left: 1144px;
+    top: 556px;
     background: #3077C6;
     border-radius: 8px;
-    margin-left: -5px;
     font-family: Roboto;
+    color: #FFFFFF;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
