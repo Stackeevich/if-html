@@ -4,96 +4,179 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson-3</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Document</title>
 </head>
 <body>
-    <p>Всё началось в не так &#9749 далёком <strong>2018 году</strong> когда я начал служить в наших <em>доблестных пограничных войсках.</em><br>Тогда я как обычно сидел в <mark>youtube</mark> и случайно наткнулся на обучающее видео по HTML. Тогда я его просто просмотрел и немного стало интересно а как это работает.<br> После пробовал самостоятельно учить всё это но информации <mark>для изучения стало слишком много</mark> и я решил пойти куда-нибудь учиться.<br> Я купил курс на FructCode там показывали как делается макет сайта с фильмами. шло время, а я так толком ничему и не научился, плюс на работе было просто не до учёбы и я забил на это всё.</p>
-    <p><ins>Прошлой зимой я уволился из ОПС &#10004</ins> и начал работать тренером по л/атлетике. З/п у тренера очень маленькая и я решил пойти учиться куда-нибуть чтоб в последующем устроиться на нормальную работу.<br> Вот тут и вспомнил про все то что учил когда-то и решил дальше двигаться в этом направлении и чем глубже я погружаюсь тем мне всё более интересно как это работает и как решать все новые более сложные задачи.</p>
     
-    <p><img src="img/ghtrfbhj.jpg" alt="Программист"></p>
-    
-<ol>
-    <li>Знакомство с Web</li>
-        <ul>
-            <li>Краткая история Web  и что такое интернет.</li>
-            <li>Как устроен браузер и как он получает страницы по сети.</li>
-            <li>Что такое Git?</li>
-            <li>Создание первого репозитория.</li>
-            <li>О файле .gitignore.</li>
-         </ul>
-    <li>HTML-вёрстка - первые шаги</li>
-        <ul>
-            <li>Настройка рабочей среды.</li>
-            <li>Краткая история HTML.</li>
-            <li>Какие бывают теги и что такое атрибут.</li>
-            <li>Теги для работы с текстом</li>
-            <li>Создание собственной страницы</li>
-        </ul>   
-    <li>Погружение в HTML-разметку</li>
-        <ul>
-            <li>Мета-теги.</li>
-            <li>Мнемоники.</li>
-            <li>Тег для работы с изображениями</li>
-            <li>Теги для работы со списками.</li>
-            <li>Теги для работы с таблицами.</li>
-            <li>Теги для работы с формами.</li>
-            <li>Div-блоки</li>
-        </ul>
-</ol>
+<header> 
+    <div class="head">
+        
+        <div class="logo">
+            <a href="#">
+                <svg id="icon">
+                    <use xlink:href="assets/InlineSprite.svg#logo" alt="logo"></use>
+                </svg>
+            </a>
+        </div>
+        
+        <div class="head-menu">
+            <p class="menu stays"><a href="#" > Stays</a></p>
+            <p class="menu attraction"><a href="#">Attractions</a></p>
+            <a href="#">
+               <img class="night-logo" src="assets/img/Night.svg" alt="nignt-logo" >
+            </a>
+                
+            <a href="#">
+                <img class="accountCircle" src="assets/img/AccountCircle.svg" alt="AccountCircle">
+            </a>
+                
+        </div>
+        
+    </div>
+        
+    <div class="contentBox">
+        
+        <div class="textHeader">
+            <p>Discover stays <br> to live, work or just relax</p>
+        </div>
+        
+       <div class="inputPanel">
+        
+            <div class="inputPanelText">
+                <p class="hotelNameText">Your destination or hotel name</p>
+                <p class="dateText">Check-in — Check-out</p>
+            </div>
+        
+        <div class="forms">
+            <input class="cityName" type="text" placeholder="New York">
+            <input class="date" type="date">
+            <input class="howPeople" type="text" placeholder="2 Adults — 0 Children — 1 Room">
+            <input class="searchBottom" type="button" value="Search">
+        </div>
 
-<table border="1">    
-    <tr>
-        <th>Tag</th>
-        <th>Description</th>
-    </tr>
-    <tr><td>< table ></td><td>Defines a table</td>
-    <tr><td>< tr ></td><td>Drfines a row in a table</td>
-    <tr><td>< th ></td><td rowspan="2">Defines a "header cell" / "cell" in a table</td>
-    <tr><td>< td ></td>
-    <tr><td colspan="2">Rarely used</td>
-    <tr><td>< caption ></td><td>Defines a table caption</td>
-    <tr><td>< thead ></td><td>Groups the header content in a table</td>
-    <tr><td>< tbody ></td><td>Groups the body content in a table</td>
-    <tr><td>< tfoot ></td><td>Groups the footer content in a table</td>  
-</table>
+        </div>
+        
+        <div class="deviseLogo">
+        
+            <a href="#">
+                <img src="assets/img/google-play-badge.svg" class="gPlayLogo" alt="google play">
+            </a>
+                
+            <a href="#">
+                <img src="assets/img/app-store-badge.svg" class="appStoreLogo" alt="app store">
+            </a>
+                
+        </div>
 
-<form>
-    <fieldset>
-            <legend>My first form</legend>
-                <p>Name: <input required name="1"></p>
-                <p>Email: <input required type="email" name="1"></p>
-                <p>Password: <input required type="password" name="1"></p>
+    </div>
+        
+</header>
 
-        <p>Your programming level</p>     
-            <input class="range-style" type="range" min="0" max="10" step="1" name="Lewel" value="0-10"></p>
-            
-        <p>What does HTML stand for?</p>
-            <p><input type="checkbox"  name="1" value="Hypelinks and Text Markup Language" >Hypelinks and Text Markup Language</p>
-            <p><input type="checkbox"  name="1" value="Home Tool Markup Language" >Home Tool Markup Language</p> 
-            <p><input type="checkbox"  name="1" value="Hyper Text Markup Language" >Hyper Text Markup Language</p>
+<main>
+    <div class="mainContainer">
 
-        <p>What does HTTP stand for?</p>
-            <p><input type="radio" name="1" value="Hyper Text Translate Protocol" >Hyper Text Translate Protocol</p>
-            <p><input type="radio" name="1" value="Hyper Text Transmission Protocol" id="">Hyper Text Transmission Protocol</p>
-            <p><input type="radio" name="1" value="Hyper Text Transfer Protocol" >Hyper Text Transfer Protocol</p>
-            
-        <p>Comment</p>
-        <textarea name="1" id="" cols="20" rows="5" maxlength="500" placeholder="Comment"></textarea>
+        <div class="offerItems">
 
-        <p>What does HTML stand for?</p>
-        <select name="1" >
-            <option value="Your answer.">Your answer.</option>
-            <option value="Hypelinks and Text Markup Language">Hypelinks and Text Markup Language</option>
-            <option value="Home Tool Markup Language">Home Tool Markup Language</option>
-            <option value="Hyper Text Markup Language">Hyper Text Markup Language</option>
-        </select>
+                <div class="headOfferItems">
+                    <h2>What do we offer</h2>
+                    <hr>
+                </div>
 
-        <p><input type="submit" value="Send"></p>
+            <div class="icon-item">
 
-    </fieldset>
-</form>
+                <div class="support">
+                    <a href="#">
+                        <svg id="icon">
+                            <use xlink:href="assets/InlineSprite.svg#support" alt="support"></use>
+                        </svg>
+                    </a>
+                    <p class="item-icons suppot-item">Support 24/7</p>
+                </div>
 
-<hr>
+                <div class="comm">
+                    <a href="#">
+                        <svg id="icon">
+                            <use xlink:href="assets/InlineSprite.svg#comm" alt="comm"></use>
+                        </svg>
+                    </a>
+                    <p class="item-icons comm-item">Communicate directly</p>
+                </div>
+
+                <div class="book">
+                    <a href="#">
+                        <svg id="icon">
+                            <use xlink:href="assets/InlineSprite.svg#book" alt="book"></use>
+                        </svg>
+                    </a>
+                    <p class="item-icons book-item">Book online</p>
+                </div>
+
+                <div class="rev">
+                    <a href="#">
+                        <svg id="icon">
+                            <use xlink:href="assets/InlineSprite.svg#reviews" alt="reviews"></use>
+                        </svg>
+                    </a>
+                    <p class="item-icons rev-item">Real guest reviews</p>
+                </div>
+
+            </div>
+   
+        </div>
+        
+
+    </div>
+
+</main>
+
+<footer>
+
+    <div class="logoFooter">
+        <a href="#">
+            <svg id="icon">
+                <use xlink:href="assets/InlineSprite.svg#logoFooter" alt="logo"></use>
+            </svg>
+        </a>
+    </div>
+
+    <div class="footerList">
+
+        <div class="footer-menu about">
+            <ul>
+                <li class="text-head"><a href="#">About</a></li>
+                <li class="text-item"><a href="#">How Triphouse works</a></li>
+                <li class="text-item"><a href="#">Careers</a></li>
+                <li class="text-item"><a href="#">Privacy</a></li>
+                <li class="text-item"><a href="#">Terms</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-menu propetries">
+            <ul>
+                <li class="text-head"><a href="#">Property types</a></li>
+                <li class="text-item"><a href="#">Guest houses</a></li>
+                <li class="text-item"><a href="#">Hotels</a></li>
+                <li class="text-item"><a href="#">Apartments</a></li>
+                <li class="text-item"><a href="#">Villas</a></li>
+                <li class="text-item"><a href="#">Holiday homes</a></li>
+                <li class="text-item"><a href="#">Hostels</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-menu supportText">         
+            <ul>
+                <li class="text-head"><a href="#">Support</a></li>
+                <li class="text-item"><a href="#">Contact Customer Service</a></li>
+                <li class="text-item"><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="textfoot">
+        &#169 2020 Triphouse, Inc. All rights reserved
+    </div>
+</footer>
 
 </body>
 </html>
