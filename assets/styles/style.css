@@ -34,18 +34,18 @@ header {
     height: 900px;
 }
 
-.head {
+.navContainer {
     display: flex;
     justify-content: center;
     grid-gap: 104px 672px ;
     }
 
-.head-menu {
+.headerNavItems {
     display: flex;
     justify-content: center;
 }
 
-.logo {
+.headerlogo {
     width: 205px;
     height: 40px;
     left: 104px;
@@ -54,7 +54,7 @@ header {
     ;
 }
 
-.menu {
+.headerMenuItem {
     font-family: Roboto;
     font-size: 24px;
     font-style: normal;
@@ -64,18 +64,18 @@ header {
     text-align: center;
 }
 
-.head-menu>p>a {
+.headerNavItems>p>a {
     text-decoration: none;
     color: #ffffff;
     margin-top: 57px;
 }
 
-.stays {
+.staysItem {
     margin: 57px 12px 0;
     border-bottom: 4px solid #F5BD41;
 }
 
-.attraction {
+.attractionItem {
     margin: 57px 24px 0 12px;
 }
 
@@ -112,7 +112,7 @@ header {
     color: #ffffff;    
 }
 
-.inputPanel {
+.inputPanelInform {
     margin-top: 100px;
 }
 
@@ -154,7 +154,7 @@ header {
 }
 
 
-.cityName {
+.cityInputItem {
     width: 462px;
     height: 58px;
     font-family: Roboto;
@@ -168,7 +168,7 @@ header {
     border-radius: 8px;
 }
 
-.date {
+.dateInputItem {
     width: 259px;
     height: 53px;
     padding-top: 5px;
@@ -183,7 +183,7 @@ header {
     border-radius: 8px;
 }
 
-.howPeople {
+.guestsInputItem {
     width: 301px;
     height: 58px;
     border: #FFFFFF;
@@ -197,7 +197,7 @@ header {
     
 }
 
-.searchBottom {
+.searchInputItem {
     width: 192px;
     height: 64px;
     left: 1144px;
