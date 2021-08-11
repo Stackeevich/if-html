@@ -4,96 +4,447 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson-3</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Document</title>
 </head>
 <body>
-    <p>Всё началось в не так &#9749 далёком <strong>2018 году</strong> когда я начал служить в наших <em>доблестных пограничных войсках.</em><br>Тогда я как обычно сидел в <mark>youtube</mark> и случайно наткнулся на обучающее видео по HTML. Тогда я его просто просмотрел и немного стало интересно а как это работает.<br> После пробовал самостоятельно учить всё это но информации <mark>для изучения стало слишком много</mark> и я решил пойти куда-нибудь учиться.<br> Я купил курс на FructCode там показывали как делается макет сайта с фильмами. шло время, а я так толком ничему и не научился, плюс на работе было просто не до учёбы и я забил на это всё.</p>
-    <p><ins>Прошлой зимой я уволился из ОПС &#10004</ins> и начал работать тренером по л/атлетике. З/п у тренера очень маленькая и я решил пойти учиться куда-нибуть чтоб в последующем устроиться на нормальную работу.<br> Вот тут и вспомнил про все то что учил когда-то и решил дальше двигаться в этом направлении и чем глубже я погружаюсь тем мне всё более интересно как это работает и как решать все новые более сложные задачи.</p>
     
-    <p><img src="img/ghtrfbhj.jpg" alt="Программист"></p>
+<header> 
+    <div class="navigation-container">
+        
+        <div class="header-logo">
+            <a href="#">
+                <svg id="icon">
+                    <use xlink:href="assets/InlineSprite.svg#logo" alt="logo"></use>
+                </svg>
+            </a>
+        </div>
+        
+        <div class="navigation-items">
+             
+                <div class="nav--item-text">
+                    <p class="navigation-item stays-item"><a href="#"> Stays</a></p>
+                    <p class="navigation-item attraction-item"><a href="#">Attractions</a></p>
+                </div>
+              
+            <div class="nav--item-icons">
+                <a href="#">
+                <img class="night-logo" src="assets/img/Night.svg" alt="nignt-logo" >
+                </a>
+                    
+                <a href="#">
+                    <img class="account-circle-logo" src="assets/img/AccountCircle.svg" alt="AccountCircle">
+                </a>
+            </div>
+                
+        </div>
+        
+    </div>
+        
+    <div class="content-input-box">
+        
+        <div class="input-title">
+            <p>Discover stays <br> to live, work or just relax</p>
+        </div>
+        
+       <div class="input-panel-inform">
+                      
+                <div class="input-panel-text">
+                    <p class="hotel-name-text">Your destination or hotel name</p>
+                    <p class="date-text">Check-in — Check-out</p>
+                </div>
+        
+            <div class="forms">
+                <input class="city-input-item" type="text" placeholder="Your destination or hotel name">
+                <input class="date-in-item" type="date" >
+                <input class="date-out-item" type="date">
+                <input class="guests-input-item" type="text" placeholder="2 Adults — 0 Children — 1 Room">
+                <input class="search-input-item" type="button" value="Search">
+            </div>
+
+        </div>
+        
+        <div class="devise-logo">
+        
+            <a href="#">
+                <img src="assets/img/google-play-badge.svg" class="google-play-logo" alt="google play">
+            </a>
+                
+            <a href="#">
+                <img src="assets/img/app-store-badge.svg" class="app-store-logo" alt="app store">
+            </a>
+                
+        </div>
+
+    </div>
+        
+</header>
+
+<main>
+    <div class="offer-container">
+
+        <div class="offer-items">
+
+                <div class="head-offer-items">
+                    <h2>What do we offer</h2>
+                    <hr>
+                </div>
+
+            <div class="icon-item">
+
+                <div class="support-icon">
+                    <a href="#">
+                        <svg id="icon">
+                            <use xlink:href="assets/InlineSprite.svg#support" alt="support"></use>
+                        </svg>
+                    </a>
+                    <p class="item-icons suppot-item">Support 24/7</p>
+                </div>
+
+                <div class="communicate-icon">
+                    <a href="#">
+                        <svg id="icon">
+                            <use xlink:href="assets/InlineSprite.svg#comm" alt="comm"></use>
+                        </svg>
+                    </a>
+                    <p class="item-icons communicate-item">Communicate directly</p>
+                </div>
+
+                <div class="book-icon">
+                    <a href="#">
+                        <svg id="icon">
+                            <use xlink:href="assets/InlineSprite.svg#book" alt="book"></use>
+                        </svg>
+                    </a>
+                    <p class="item-icons book-item">Book online</p>
+                </div>
+
+                <div class="reviews-icon">
+                    <a href="#">
+                        <svg id="icon">
+                            <use xlink:href="assets/InlineSprite.svg#reviews" alt="reviews"></use>
+                        </svg>
+                    </a>
+                    <p class="item-icons reviews-item">Real guest reviews</p>
+                </div>
+
+            </div>
+   
+        </div> 
+
+    </div>
+
+    <div class="guests-container">
+
+        <p class="guests-section-title">Homes guests loves</p>
+
+        <div class="image-container">
+
+            <div class="guests-container-item">
+
+                <img src="/assets/img/guests-img/guest-image-1.svg" alt="first">  
+
+                <figcaption class="image-item-name"><a href="#">Hotel Leopold</a></figcaption>
+
+                <p>Saint Petersburg, Russia</p>
+
+            </div>
+
+            <div class="guests-container-item">
+
+                <img src="/assets/img/guests-img/guest-image-2.svg" alt="second">
+
+                <figcaption class="image-item-name"><a href="#">Apartment Sunshine</a></figcaption>
+
+                <p>Santa  Cruz de Tenerife, Spain</p>
+
+            </div>
+
+            <div class="guests-container-item">
+
+                <img src="/assets/img/guests-img/guest-image-3.svg" alt="third">
+
+                <figcaption class="image-item-name"><a href="#">Villa Kunerad</a></figcaption>
+
+                <p>Vysokie Tatry, Slowakia</p>
+
+            </div>
+
+            <div class="guests-container-item">
+
+                <img src="/assets/img/guests-img/guest-image-4.svg" alt="fours"> 
+
+                <figcaption class="image-item-name"><a href="#">Hostel Friendship</a></figcaption>
+
+                <p>Berlin, Germany</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<div class="destimation--section">
+
+    <p class="destination-section-title">The best destinations</p>
+
+    <div class="content-section">
+
+        <div class="destination--navigation">
+
+            <ul class="navi-item">
+                <li class="destination-nav-item"><a href="#">Regions</a></li>
+                <li class="destination-nav-item"><a href="#">Cities</a></li>
+                <li class="destination-nav-item destination-place-item"><a href="#">Places of interest</a></li>
+            </ul>
+
+        </div>
+
+        <div class="destination-image-block">
+
+            <div class="destination-image-item">
+                <img src="assets/img/destinations/dest 1.svg" alt="Maldives">
+                <figcaption class="image-item-name"><a href="#">Maldives</a></figcaption>
+            </div>
+
+            <div class="destination-image-item">
+                <img src="assets/img/destinations/dest 2.svg" alt="Spain">
+                <figcaption class="image-item-name"><a href="#">Spain</a></figcaption>
+            </div>
+
+            <div class="destination-image-item">
+                <img src="assets/img/destinations/dest 3.svg" alt="Norway">
+                <figcaption class="image-item-name"><a href="#">Norway</a></figcaption>
+            </div>
+
+            <div class="destination-image-item">
+                <img src="assets/img/destinations/dest 4.svg" alt="Island">
+                <figcaption class="image-item-name"><a href="#">Island</a></figcaption>
+            </div>
+
+        </div>
+
+        <div class="next-content-page">
+            <a href="#">
+                <svg id="polugon-icon">
+                    <use xlink:href="assets/InlineSprite.svg#polugon" alt="polugon"></use>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<div class="sign-up-section">
+
+    <div class="sugn-up-icons">
+        <div class="sugn-up-icon-people">
+            <a href="#">
+                <svg id="icon">
+                    <use xlink:href="assets/InlineSprite.svg#sign-up-people" alt="people"></use>
+                </svg>
+            </a>
+        </div>
+   
+
+        <div class="sugn-up-icon-plus">
+            <a href="#">
+                <svg id="icon">
+                    <use xlink:href="assets/InlineSprite.svg#sign-up-plus" alt="plus"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="sign-up--text">
+        <p class="sign-up--text-item">Sign up and get 20% off your first booking</p>
+
+        <input class="sign-up--button" type="button" value="Sign up">
+    </div>
+
     
-<ol>
-    <li>Знакомство с Web</li>
-        <ul>
-            <li>Краткая история Web  и что такое интернет.</li>
-            <li>Как устроен браузер и как он получает страницы по сети.</li>
-            <li>Что такое Git?</li>
-            <li>Создание первого репозитория.</li>
-            <li>О файле .gitignore.</li>
-         </ul>
-    <li>HTML-вёрстка - первые шаги</li>
-        <ul>
-            <li>Настройка рабочей среды.</li>
-            <li>Краткая история HTML.</li>
-            <li>Какие бывают теги и что такое атрибут.</li>
-            <li>Теги для работы с текстом</li>
-            <li>Создание собственной страницы</li>
-        </ul>   
-    <li>Погружение в HTML-разметку</li>
-        <ul>
-            <li>Мета-теги.</li>
-            <li>Мнемоники.</li>
-            <li>Тег для работы с изображениями</li>
-            <li>Теги для работы со списками.</li>
-            <li>Теги для работы с таблицами.</li>
-            <li>Теги для работы с формами.</li>
-            <li>Div-блоки</li>
-        </ul>
-</ol>
 
-<table border="1">    
-    <tr>
-        <th>Tag</th>
-        <th>Description</th>
-    </tr>
-    <tr><td>< table ></td><td>Defines a table</td>
-    <tr><td>< tr ></td><td>Drfines a row in a table</td>
-    <tr><td>< th ></td><td rowspan="2">Defines a "header cell" / "cell" in a table</td>
-    <tr><td>< td ></td>
-    <tr><td colspan="2">Rarely used</td>
-    <tr><td>< caption ></td><td>Defines a table caption</td>
-    <tr><td>< thead ></td><td>Groups the header content in a table</td>
-    <tr><td>< tbody ></td><td>Groups the body content in a table</td>
-    <tr><td>< tfoot ></td><td>Groups the footer content in a table</td>  
-</table>
+</div>
 
-<form>
-    <fieldset>
-            <legend>My first form</legend>
-                <p>Name: <input required name="1"></p>
-                <p>Email: <input required type="email" name="1"></p>
-                <p>Password: <input required type="password" name="1"></p>
+<div class="guest-reviews--section">
 
-        <p>Your programming level</p>     
-            <input class="range-style" type="range" min="0" max="10" step="1" name="Lewel" value="0-10"></p>
-            
-        <p>What does HTML stand for?</p>
-            <p><input type="checkbox"  name="1" value="Hypelinks and Text Markup Language" >Hypelinks and Text Markup Language</p>
-            <p><input type="checkbox"  name="1" value="Home Tool Markup Language" >Home Tool Markup Language</p> 
-            <p><input type="checkbox"  name="1" value="Hyper Text Markup Language" >Hyper Text Markup Language</p>
+    <div class="reviews-container">
 
-        <p>What does HTTP stand for?</p>
-            <p><input type="radio" name="1" value="Hyper Text Translate Protocol" >Hyper Text Translate Protocol</p>
-            <p><input type="radio" name="1" value="Hyper Text Transmission Protocol" id="">Hyper Text Transmission Protocol</p>
-            <p><input type="radio" name="1" value="Hyper Text Transfer Protocol" >Hyper Text Transfer Protocol</p>
-            
-        <p>Comment</p>
-        <textarea name="1" id="" cols="20" rows="5" maxlength="500" placeholder="Comment"></textarea>
+        <p class="guest-reviews-section-title">Guests reviews</p>
+    
+        <div class="reviews--section-items">
 
-        <p>What does HTML stand for?</p>
-        <select name="1" >
-            <option value="Your answer.">Your answer.</option>
-            <option value="Hypelinks and Text Markup Language">Hypelinks and Text Markup Language</option>
-            <option value="Home Tool Markup Language">Home Tool Markup Language</option>
-            <option value="Hyper Text Markup Language">Hyper Text Markup Language</option>
-        </select>
+            <div class="reviews-img-item">
 
-        <p><input type="submit" value="Send"></p>
+                <img src="assets/img/guests-revievs-img/image.svg" alt="Bali, Indonesia">
+                <p class="text-on-img">From 250 USD</p>
+                <div class="place-raiting">
 
-    </fieldset>
-</form>
+                    <div class="place-revievs-item">
 
-<hr>
+                        <p class="item-of-place">Ubud Bali Resort&SPA</p>
+                        <p class="country-city-place">Bali, Indonesia</p>
+
+                    </div>
+
+                    <div class="reviews-raiting">
+
+                        <p class="raiting-item">9,4</p>
+                        <p class="reviews">1324 reviews</p>
+
+                    </div>
+
+                </div>
+
+                <div class="reviews-img-text-item">
+                    <div class="guest-reviews-icon">
+                        <a href="#">
+                            <svg id="icon">
+                                <use xlink:href="assets/InlineSprite.svg#reviews-answer" alt="answer"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="location-of-the-commentator">
+                        <p class="commentator-name">Hanna Ivanova</p>
+                        <img src="/assets/img/guests-revievs-img/🇺🇦 Ukraine.svg" alt="Ukraine">
+                    </div>
+                </div>
+                <p class="reviews-text-item">Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice. </p>
+
+            </div>
+
+            <div class="reviews-img-item">
+                <img src="assets/img/guests-revievs-img/image (1).svg" alt="Rotterdam, Netherlands">
+                <p class="text-on-img">From 40 USD</p>
+                <div class="place-raiting">
+
+                    <div class="place-revievs-item">
+
+                        <p class="item-of-place">King Kong Hostel</p>
+                        <p class="country-city-place">Rotterdam, Netherlands</p>
+
+                    </div>
+
+                    <div class="reviews-raiting">
+
+                        <p class="raiting-item">8,9</p>
+                        <p class="reviews">2016 reviews</p>
+
+                    </div>
+
+                </div>
+
+                <div class="reviews-img-text-item">
+                    <div class="guest-reviews-icon">
+                        <a href="#">
+                            <svg id="icon">
+                                <use xlink:href="assets/InlineSprite.svg#reviews-answer" alt="answer"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="location-of-the-commentator">
+                        <p class="commentator-name">Adam Smith</p>
+                        <img src="assets/img/guests-revievs-img/🇺🇸 USA.svg" alt="USA">
+                    </div>
+                </div>
+                <p class="reviews-text-item">I've been in this hostel for a month and here is the best hostel of all
+                    Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent
+                    Most importantly, those who work here are kind and good-natured.</p>
+
+            </div>
+
+            <div class="reviews-img-item">
+                <img src="assets/img/guests-revievs-img/image (2).svg" alt="Ourika, Marocco">
+                <p class="text-on-img">From 100 USD</p>
+                <div class="place-raiting">
+
+                    <div class="place-revievs-item">
+
+                        <p class="item-of-place">Rokoko Hotel</p>
+                        <p class="country-city-place">Ourika, Marocco</p>
+
+                    </div>
+
+                    <div class="reviews-raiting">
+
+                        <p class="raiting-item">9,1</p>
+                        <p class="reviews">815 reviews</p>
+
+                    </div>
+
+                </div>
+
+                <div class="reviews-img-text-item">
+                    <div class="guest-reviews-icon">
+                        <a href="#">
+                            <svg id="icon">
+                                <use xlink:href="assets/InlineSprite.svg#reviews-answer" alt="answer"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="location-of-the-commentator">
+                        <p class="commentator-name">Anika Messer</p>
+                        <img src="assets/img/guests-revievs-img/🇩🇪 Germany.svg" alt="Germany">
+                    </div>
+                </div>
+                <p class="reviews-text-item">Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+</main>
+
+<footer>
+
+    <div class="logo-footer">
+        <a href="#">
+            <svg id="icon">
+                <use xlink:href="assets/InlineSprite.svg#logo-footer" alt="logo"></use>
+            </svg>
+        </a>
+    </div>
+
+    <div class="footer-list">
+
+        <div class="footer-menu about">
+            <ul>
+                <li class="text-head"><a href="#">About</a></li>
+                <li class="text-item"><a href="#">How Triphouse works</a></li>
+                <li class="text-item"><a href="#">Careers</a></li>
+                <li class="text-item"><a href="#">Privacy</a></li>
+                <li class="text-item"><a href="#">Terms</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-menu propetries">
+            <ul>
+                <li class="text-head"><a href="#">Property types</a></li>
+                <li class="text-item"><a href="#">Guest houses</a></li>
+                <li class="text-item"><a href="#">Hotels</a></li>
+                <li class="text-item"><a href="#">Apartments</a></li>
+                <li class="text-item"><a href="#">Villas</a></li>
+                <li class="text-item"><a href="#">Holiday homes</a></li>
+                <li class="text-item"><a href="#">Hostels</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-menu supportText">         
+            <ul>
+                <li class="text-head"><a href="#">Support</a></li>
+                <li class="text-item"><a href="#">Contact Customer Service</a></li>
+                <li class="text-item"><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bottom-signature">
+        &#169 2020 Triphouse, Inc. All rights reserved
+    </div>
+</footer>
 
 </body>
 </html>
