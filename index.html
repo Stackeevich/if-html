@@ -21,15 +21,21 @@
         </div>
         
         <div class="navigation-items">
-            <p class="navigation-item stays-item"><a href="#" > Stays</a></p>
-            <p class="navigation-item attraction-item"><a href="#">Attractions</a></p>
-            <a href="#">
-               <img class="night-logo" src="assets/img/Night.svg" alt="nignt-logo" >
-            </a>
-                
-            <a href="#">
-                <img class="account-circle-logo" src="assets/img/AccountCircle.svg" alt="AccountCircle">
-            </a>
+             
+                <div class="nav--item-text">
+                    <p class="navigation-item stays-item"><a href="#"> Stays</a></p>
+                    <p class="navigation-item attraction-item"><a href="#">Attractions</a></p>
+                </div>
+              
+            <div class="nav--item-icons">
+                <a href="#">
+                <img class="night-logo" src="assets/img/Night.svg" alt="nignt-logo" >
+                </a>
+                    
+                <a href="#">
+                    <img class="account-circle-logo" src="assets/img/AccountCircle.svg" alt="AccountCircle">
+                </a>
+            </div>
                 
         </div>
         
@@ -42,19 +48,19 @@
         </div>
         
        <div class="input-panel-inform">
+                      
+                <div class="input-panel-text">
+                    <p class="hotel-name-text">Your destination or hotel name</p>
+                    <p class="date-text">Check-in — Check-out</p>
+                </div>
         
-            <div class="input-panel-text">
-                <p class="hotel-name-text">Your destination or hotel name</p>
-                <p class="date-text">Check-in — Check-out</p>
+            <div class="forms">
+                <input class="city-input-item" type="text" placeholder="Your destination or hotel name">
+                <input class="date-in-item" type="date" >
+                <input class="date-out-item" type="date">
+                <input class="guests-input-item" type="text" placeholder="2 Adults — 0 Children — 1 Room">
+                <input class="search-input-item" type="button" value="Search">
             </div>
-        
-        <div class="forms">
-            <input class="city-input-item" type="text" placeholder="New York">
-            <input class="date-in-item" type="date">
-            <input class="date-out-item" type="date">
-            <input class="guests-input-item" type="text" placeholder="2 Adults — 0 Children — 1 Room">
-            <input class="search-input-item" type="button" value="Search">
-        </div>
 
         </div>
         
@@ -130,7 +136,7 @@
 
     <div class="guests-container">
 
-        <p class="guests-title">Homes guests loves</p>
+        <p class="guests-section-title">Homes guests loves</p>
 
         <div class="image-container">
 
@@ -138,7 +144,7 @@
 
                 <img src="/assets/img/guests-img/guest-image-1.svg" alt="first">  
 
-                <figcaption class="guests-item-name"><a href="#">Hotel Leopold</a></figcaption>
+                <figcaption class="image-item-name"><a href="#">Hotel Leopold</a></figcaption>
 
                 <p>Saint Petersburg, Russia</p>
 
@@ -148,7 +154,7 @@
 
                 <img src="/assets/img/guests-img/guest-image-2.svg" alt="second">
 
-                <figcaption class="guests-item-name"><a href="#">Apartment Sunshine</a></figcaption>
+                <figcaption class="image-item-name"><a href="#">Apartment Sunshine</a></figcaption>
 
                 <p>Santa  Cruz de Tenerife, Spain</p>
 
@@ -158,7 +164,7 @@
 
                 <img src="/assets/img/guests-img/guest-image-3.svg" alt="third">
 
-                <figcaption class="guests-item-name"><a href="#">Villa Kunerad</a></figcaption>
+                <figcaption class="image-item-name"><a href="#">Villa Kunerad</a></figcaption>
 
                 <p>Vysokie Tatry, Slowakia</p>
 
@@ -168,7 +174,7 @@
 
                 <img src="/assets/img/guests-img/guest-image-4.svg" alt="fours"> 
 
-                <figcaption class="guests-item-name"><a href="#">Hostel Friendship</a></figcaption>
+                <figcaption class="image-item-name"><a href="#">Hostel Friendship</a></figcaption>
 
                 <p>Berlin, Germany</p>
 
@@ -177,6 +183,218 @@
         </div>
 
     </div>
+
+<div class="destimation--section">
+
+    <p class="destination-section-title">The best destinations</p>
+
+    <div class="content-section">
+
+        <div class="destination--navigation">
+
+            <ul class="navi-item">
+                <li class="destination-nav-item"><a href="#">Regions</a></li>
+                <li class="destination-nav-item"><a href="#">Cities</a></li>
+                <li class="destination-nav-item destination-place-item"><a href="#">Places of interest</a></li>
+            </ul>
+
+        </div>
+
+        <div class="destination-image-block">
+
+            <div class="destination-image-item">
+                <img src="assets/img/destinations/dest 1.svg" alt="Maldives">
+                <figcaption class="image-item-name"><a href="#">Maldives</a></figcaption>
+            </div>
+
+            <div class="destination-image-item">
+                <img src="assets/img/destinations/dest 2.svg" alt="Spain">
+                <figcaption class="image-item-name"><a href="#">Spain</a></figcaption>
+            </div>
+
+            <div class="destination-image-item">
+                <img src="assets/img/destinations/dest 3.svg" alt="Norway">
+                <figcaption class="image-item-name"><a href="#">Norway</a></figcaption>
+            </div>
+
+            <div class="destination-image-item">
+                <img src="assets/img/destinations/dest 4.svg" alt="Island">
+                <figcaption class="image-item-name"><a href="#">Island</a></figcaption>
+            </div>
+
+        </div>
+
+        <div class="next-content-page">
+            <a href="#">
+                <svg id="polugon-icon">
+                    <use xlink:href="assets/InlineSprite.svg#polugon" alt="polugon"></use>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<div class="sign-up-section">
+
+    <div class="sugn-up-icons">
+        <div class="sugn-up-icon-people">
+            <a href="#">
+                <svg id="icon">
+                    <use xlink:href="assets/InlineSprite.svg#sign-up-people" alt="people"></use>
+                </svg>
+            </a>
+        </div>
+   
+
+        <div class="sugn-up-icon-plus">
+            <a href="#">
+                <svg id="icon">
+                    <use xlink:href="assets/InlineSprite.svg#sign-up-plus" alt="plus"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="sign-up--text">
+        <p class="sign-up--text-item">Sign up and get 20% off your first booking</p>
+
+        <input class="sign-up--button" type="button" value="Sign up">
+    </div>
+
+    
+
+</div>
+
+<div class="guest-reviews--section">
+
+    <div class="reviews-container">
+
+        <p class="guest-reviews-section-title">Guests reviews</p>
+    
+        <div class="reviews--section-items">
+
+            <div class="reviews-img-item">
+
+                <img src="assets/img/guests-revievs-img/image.svg" alt="Bali, Indonesia">
+                <p class="text-on-img">From 250 USD</p>
+                <div class="place-raiting">
+
+                    <div class="place-revievs-item">
+
+                        <p class="item-of-place">Ubud Bali Resort&SPA</p>
+                        <p class="country-city-place">Bali, Indonesia</p>
+
+                    </div>
+
+                    <div class="reviews-raiting">
+
+                        <p class="raiting-item">9,4</p>
+                        <p class="reviews">1324 reviews</p>
+
+                    </div>
+
+                </div>
+
+                <div class="reviews-img-text-item">
+                    <div class="guest-reviews-icon">
+                        <a href="#">
+                            <svg id="icon">
+                                <use xlink:href="assets/InlineSprite.svg#reviews-answer" alt="answer"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="location-of-the-commentator">
+                        <p class="commentator-name">Hanna Ivanova</p>
+                        <img src="/assets/img/guests-revievs-img/🇺🇦 Ukraine.svg" alt="Ukraine">
+                    </div>
+                </div>
+                <p class="reviews-text-item">Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice. </p>
+
+            </div>
+
+            <div class="reviews-img-item">
+                <img src="assets/img/guests-revievs-img/image (1).svg" alt="Rotterdam, Netherlands">
+                <p class="text-on-img">From 40 USD</p>
+                <div class="place-raiting">
+
+                    <div class="place-revievs-item">
+
+                        <p class="item-of-place">King Kong Hostel</p>
+                        <p class="country-city-place">Rotterdam, Netherlands</p>
+
+                    </div>
+
+                    <div class="reviews-raiting">
+
+                        <p class="raiting-item">8,9</p>
+                        <p class="reviews">2016 reviews</p>
+
+                    </div>
+
+                </div>
+
+                <div class="reviews-img-text-item">
+                    <div class="guest-reviews-icon">
+                        <a href="#">
+                            <svg id="icon">
+                                <use xlink:href="assets/InlineSprite.svg#reviews-answer" alt="answer"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="location-of-the-commentator">
+                        <p class="commentator-name">Adam Smith</p>
+                        <img src="assets/img/guests-revievs-img/🇺🇸 USA.svg" alt="USA">
+                    </div>
+                </div>
+                <p class="reviews-text-item">I've been in this hostel for a month and here is the best hostel of all
+                    Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent
+                    Most importantly, those who work here are kind and good-natured.</p>
+
+            </div>
+
+            <div class="reviews-img-item">
+                <img src="assets/img/guests-revievs-img/image (2).svg" alt="Ourika, Marocco">
+                <p class="text-on-img">From 100 USD</p>
+                <div class="place-raiting">
+
+                    <div class="place-revievs-item">
+
+                        <p class="item-of-place">Rokoko Hotel</p>
+                        <p class="country-city-place">Ourika, Marocco</p>
+
+                    </div>
+
+                    <div class="reviews-raiting">
+
+                        <p class="raiting-item">9,1</p>
+                        <p class="reviews">815 reviews</p>
+
+                    </div>
+
+                </div>
+
+                <div class="reviews-img-text-item">
+                    <div class="guest-reviews-icon">
+                        <a href="#">
+                            <svg id="icon">
+                                <use xlink:href="assets/InlineSprite.svg#reviews-answer" alt="answer"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="location-of-the-commentator">
+                        <p class="commentator-name">Anika Messer</p>
+                        <img src="assets/img/guests-revievs-img/🇩🇪 Germany.svg" alt="Germany">
+                    </div>
+                </div>
+                <p class="reviews-text-item">Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
 
 </main>
 
