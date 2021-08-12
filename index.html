@@ -9,60 +9,72 @@
 </head>
 <body>
     
-<header> 
-    <div class="navigation-container">
-        
-        <div class="header-logo">
-            <a href="#">
-                <svg id="icon">
-                    <use xlink:href="assets/InlineSprite.svg#logo" alt="logo"></use>
+<div class="top-section">
+        <header>
+            <div class="logo__col col-md-8 col-7">
+                <a href="#">
+                    <svg class="header__logo">
+                        <use href="assets/InlineSprite.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <nav class="link__col--first link-hr">
+                <a href="#" class="header__link">Stays</a>
+            </nav>
+            <nav class="link__col--second link-hr">
+                <a href="#" class="header__link">Attractions</a>
+            </nav>
+            <div class="icon__col--first">
+                <svg class="header__icon--first">
+                    <use href="assets/InlineSprite.svg#night-theme"/>
                 </svg>
-            </a>
-        </div>
-        
-        <div class="navigation-items">
-             
-                <div class="nav--item-text">
-                    <p class="navigation-item stays-item"><a href="#"> Stays</a></p>
-                    <p class="navigation-item attraction-item"><a href="#">Attractions</a></p>
-                </div>
-              
-            <div class="nav--item-icons">
-                <a href="#">
-                <img class="night-logo" src="assets/img/Night.svg" alt="nignt-logo" >
-                </a>
-                    
-                <a href="#">
-                    <img class="account-circle-logo" src="assets/img/AccountCircle.svg" alt="AccountCircle">
-                </a>
             </div>
-                
-        </div>
-        
-    </div>
-        
-    <div class="content-input-box">
-        
-        <div class="input-title">
-            <p>Discover stays <br> to live, work or just relax</p>
-        </div>
-        
-       <div class="input-panel-inform">
-                      
-                <div class="input-panel-text">
-                    <p class="hotel-name-text">Your destination or hotel name</p>
-                    <p class="date-text">Check-in — Check-out</p>
-                </div>
-        
-            <div class="forms">
-                <input class="city-input-item" type="text" placeholder="Your destination or hotel name">
-                <input class="date-in-item" type="date" >
-                <input class="date-out-item" type="date">
-                <input class="guests-input-item" type="text" placeholder="2 Adults — 0 Children — 1 Room">
-                <input class="search-input-item" type="button" value="Search">
+            <div class="icon__col--second">
+                <svg class="header__icon--second">
+                    <use href="assets/InlineSprite.svg#account-circle"/>
+                </svg>
             </div>
-
-        </div>
+            <div class="icon__col-burger">
+                <svg class="burger">
+                    <use href="assets/InlineSprite.svg#menu"/>
+                </svg>
+            </div>
+        </header>
+    
+        <section class="section__box col-md-12 col-lg-12 col-12">
+            <p class="section__slogan">
+                Discover stays <br/>
+                to live, work or just relax
+            </p>
+    
+            <article class="container--form col-md-12 col-lg-12 col-12">
+                <form action="/" method="post">
+                    <div class="row--form">
+                        <div class="input--place--wrap">
+                            <input type="text" name="place" class="col--place col-md-12 col-lg-12 col-12" required/>
+                            <label class="label--place">Your destination or hotel name</label>
+                        </div>
+    
+                        <div class="input--date--wrap">
+                            <div class="label--date--wrap-first">
+                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
+                                       class="col--date col-md-12 col-lg-12 col-12" required/>
+                                <label class="label--date--first">Check-in</label>
+                            </div>
+                            <div class="label--date--wrap-second">
+                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
+                                       class="col--date col-md-12 col-lg-12 col-12" required/>
+                                <label class="label--date--second">Check-out</label>
+                            </div>
+                        </div>
+                        <div class="input--guest--wrap">
+                            <input type="text" name="guests" class="col--guests input--guest--wrap col-md-12 col-lg-12 col-12" required/>
+                            <label class="label--guests">2 Adults &#8212; 0 Children &#8212; 1 Room</label>
+                        </div>
+                        <button class="col--button button__text col-md-12 col-md-12 col-12"> Search</button>
+                    </div>
+                </form>
+            </article>
         
         <div class="devise-logo">
         
@@ -76,9 +88,8 @@
                 
         </div>
 
-    </div>
+</div>
         
-</header>
 
 <main>
     <div class="offer-container">
@@ -140,7 +151,7 @@
 
         <div class="image-container">
 
-            <div class="guests-container-item">
+            <div class="guests-container-item ">
 
                 <img src="/assets/img/guests-img/guest-image-1.svg" alt="first">  
 
@@ -160,7 +171,7 @@
 
             </div>
 
-            <div class="guests-container-item">
+            <div class="guests-container-item slide-item-first">
 
                 <img src="/assets/img/guests-img/guest-image-3.svg" alt="third">
 
@@ -170,7 +181,7 @@
 
             </div>
 
-            <div class="guests-container-item">
+            <div class="guests-container-item slide-item-second">
 
                 <img src="/assets/img/guests-img/guest-image-4.svg" alt="fours"> 
 
@@ -179,6 +190,14 @@
                 <p>Berlin, Germany</p>
 
             </div>
+
+            <!-- <div class="guests-polugon">
+                <a href="#">
+                    <svg id="polugon-icon">
+                        <use xlink:href="assets/InlineSprite.svg#polugon" alt="polugon"></use>
+                    </svg>
+                </a>
+            </div> -->
 
         </div>
 
@@ -390,6 +409,13 @@
                 <p class="reviews-text-item">Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.</p>
 
             </div>
+            <!-- <div class="reviews-polugon">
+                <a href="#">
+                    <svg id="polugon-icon">
+                        <use xlink:href="assets/InlineSprite.svg#polugon" alt="polugon"></use>
+                    </svg>
+                </a>
+            </div> -->
         </div>
     </div>
 
